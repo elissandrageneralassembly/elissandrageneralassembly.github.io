@@ -1,0 +1,30 @@
+
+h1{
+font-size: 60px;
+color: black;
+}
+h2{
+color: black;
+}
+body{
+font-size: 30px;
+font-family: 'Noto Serif', serif;
+}
+p{
+color: black;	
+}
+img {display: block; width: 100%;}
+.column {float: left;
+}
+.two-columns .column {width: 50%;
+}
+.three-columns .column {width: 33.3%;
+}
+.clearfix: after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
