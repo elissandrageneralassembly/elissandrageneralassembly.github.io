@@ -1,22 +1,38 @@
 
+nav{
+font-size:24px;
+color: black;
+font-family: 'Noto Serif', serif;
+text-decoration: none;
+float:right;
+}
+a {
+	text-decoration-line: none;
+	color:black;
+}
 h1{
 font-size: 60px;
-color: black;
+color: #F3CDA6;
+font-family: 'Noto Serif', serif;
 }
 h2{
-color: black;
+font-size: 45px;
+color: #F3CDA6;
+font-family: 'Noto Serif', serif;
 }
 body{
 font-size: 30px;
-font-family: 'Noto Serif', serif;
+font-family: 'HelveticaNeue-Light', sans-serif;
 }
 p{
-color: black;	
+color: white;	
 }
 img {display: block; width: 100%;}
 .column {float: left;
 }
-.two-columns .column {width: 50%;
+.two-columns .column {
+	width: 50%;
+	background-color: #73A6A5;
 }
 .three-columns .column {width: 33.3%;
 }
@@ -27,4 +43,7 @@ img {display: block; width: 100%;}
     content: " ";
     clear: both;
     height: 0;
+}
+.gallery {
+	color: black;
 }
