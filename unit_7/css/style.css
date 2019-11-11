@@ -1,25 +1,94 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+nav{
+font-size: 24px;
+color:white;
+font-family: 'Noto Serif', serif;
+text-decoration: none;
+float: right;
+word-spacing: 20px;
+}
+
+
+a{
+    text-decoration-line: none;
+    color:white;
+    display: inline;
+
+}
 
 h1{
 font-size: 60px;
-color: black;
+color: #F3CDA6;
+font-family:'Noto Serif',serif;
+padding-bottom: 20px;
+padding-top: 200px;
+padding-left: 50px;
+padding-right: 50px;
+
 }
 h2{
-color: black;
+color: #F3CDA6;
+font-size:45px;
+font-family:'Noto Serif', serif;
+padding-bottom: 20px;
+padding-top: 200px;
+padding-left: 50px;
+padding-right: 50px;
 }
-body{
-font-size: 30px;
-font-family: 'Noto Serif', serif;
+
+h3{
+padding-top: 50px;
 }
+
 p{
-color: black;	
+font-size: 30px;
+color: black;
+font-family: 'HelveticaNeue-Light', Helvetica, Arial;  
+color:white; 
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 10px;
 }
-img {display: block; width: 100%;}
+
+
+footer{
+  background-color:#163A3A;
+  height:300px; 
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
+.textbox {
+    background-color: #F3CDA6;
+    text-align: center;
+    width: 100px ;
+    height: 100px ;
+    font-family: helvetica-bold;
+    color:black;
+    display: inline;
+} 
+
+.column-img {display: block; width: 100%;
+}
+
 .column {float: left;
+    height: 100vh;
 }
-.two-columns .column {width: 50%;
+
+.two-columns .column {
+    width: 50%; 
+    background-color: #73A6A5;
+   
 }
+
+
+
 .three-columns .column {width: 33.3%;
 }
+
 .clearfix: after {
     visibility: hidden;
     display: block;
@@ -27,4 +96,84 @@ img {display: block; width: 100%;}
     content: " ";
     clear: both;
     height: 0;
+}
+
+
+/* INTRO */
+
+.intro {
+    /*background: url(../images/first_image_hero.jpg), #73A6A5;
+    background-size: 50%;
+    background-position: right;*/
+    /*height: 100vh;*/
+    position: relative;
+}
+.intro div {
+    left: 0;
+    padding: 0 4em;
+
+}
+.intro-copy {
+    height: 100vh;
+    background-color: #73A6A5;
+    padding-top: 50px;
+
+}
+
+.intro-image {
+    height: 100vh;
+    background: url(../images/first_image_hero.jpg);
+    background-size: cover;
+}
+
+.bg-image-w-copy {
+    background: url(../images/layerunderneathe.jpg);
+    background-size: cover;
+    float:right;
+}
+
+.second-image {
+    background: url(../images/second-image.jpg);
+    background-size: cover;
+}
+
+.third-image {
+    background: url(../images/third-image.jpg);
+    background-size: cover;
+}
+
+
+.gallery {
+    font-size:45px;
+    font-family:'Noto Serif', serif;
+    color: black;
+}
+
+.galleryimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.intro-image {
+  /* The image used */
+  background-image: url(../images/first_image_hero.jpg);
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  margin: 20px;
+  float: right;
 }
