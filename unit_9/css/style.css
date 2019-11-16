@@ -1,0 +1,211 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+nav {text-align: center;font-size: 24px;color:white;font-family: 'Noto Serif', serif;text-decoration: none;/* float: right; */
+}
+
+
+a { 
+    text-decoration-line: none;
+    color:white;
+    display: inline-block;
+    padding: 1em 0;
+    width: 20%;
+    float: left;
+}
+
+h1{
+font-size: 60px;
+color: #F3CDA6;
+font-family:'Noto Serif',serif;
+padding-bottom: 0px;
+padding-top: 80px;
+padding-left: 30px;
+padding-right: 30px;
+
+}
+h2{
+color: #F3CDA6;
+font-size:45px;
+font-family:'Noto Serif', serif;
+padding-bottom: 20px;
+padding-top: 60px;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+h3{padding-top: 50px;padding-left: .25rem;}
+
+p{
+font-size: 30px;
+color: black;
+font-family: 'HelveticaNeue-Light', Helvetica, Arial;  
+color:white; 
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 10px;
+}
+
+
+footer{
+  background-color:#163A3A;
+  height:300px; 
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.textbox {
+    background-color: #F3CDA6;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    color:black;
+    display: inline-block;
+} 
+
+.column-img {display: block; width: 100%;
+}
+
+.column {float: left;
+    height: 100vh;
+}
+
+.two-columns .column {
+    width: 50%; 
+    background-color: #73A6A5;
+   
+}
+
+
+
+.three-columns .column {width: 33.3%;
+}
+
+.clearfix: after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/* INTRO */
+
+.intro {
+    /*background: url(../images/first_image_hero.jpg), #73A6A5;
+    background-size: 50%;
+    background-position: right;*/
+    /*height: 100vh;*/
+    position: relative;
+}
+.intro div {
+    left: 0;
+    padding: 0;
+
+}
+.intro-copy {
+    height: 100vh;
+    background-color: #73A6A5;
+    padding-top: 50px;
+
+}
+
+.intro-image {
+    height: 100vh;
+    background: url(../images/first_image_hero.jpg);
+    background-size: cover;
+}
+
+.bg-image-w-copy {
+    background: url(../images/layerunderneathe.jpg);
+    background-size: cover;
+    float:right;
+}
+
+.second-image {
+    background: url(../images/second-image.jpg);
+    background-size: cover;
+}
+
+.third-image {
+    background: url(../images/third-image.jpg);
+    background-size: cover;
+}
+
+
+.gallery {
+    font-size:45px;
+    font-family:'Noto Serif', serif;
+    color: black;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galleryimages img {width: 25%;float: left;padding: .25rem; padding-bottom: 100px;}
+
+.intro .intro-image {
+  /* The image used */
+  background-image: url(../images/first_image_hero.jpg);
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+  padding: 0;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  margin: 20px;
+}
+.clearfix: after {
+  content: "";
+  clear:both;
+  display:block;
+}
+.desktop{
+  display: block
+}
+
+.mobile{
+  display: none;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px){
+          .two-columns .column{
+            width:100%;
+            float: none;
+}
+          .desktop{
+       display: none;
+}
+
+/* MOBILE */
+
+.mobile{
+  display: block;
+}
+
+@media screen and (max-width: 320px){
+          .two-columns .column{
+            width:100%;
+}
+          .third-image{
+            display: none;
+            background-color: #F3CDA6;
+}
+
+          .mobile{
+            display: none;
+
+}
+
