@@ -73,8 +73,7 @@ footer{
 
 .two-columns .column {
     width: 50%; 
-    background-color: #73A6A5;
-   
+    background-color: #73A6A5;  
 }
 
 
@@ -82,7 +81,7 @@ footer{
 .three-columns .column {width: 33.3%;
 }
 
-.clearfix: after {
+.clearfix:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -133,8 +132,13 @@ footer{
 .third-image {
     background: url(../images/third-image.jpg);
     background-size: cover;
+    float: right;
 }
 
+.third-copy {
+    height: 100vh;
+    background-color: #73A6A5;
+}
 
 .gallery {
     font-size:45px;
@@ -165,7 +169,7 @@ footer{
 .container {
   margin: 20px;
 }
-.clearfix: after {
+.clearfix:after {
   content: "";
   clear:both;
   display:block;
@@ -178,15 +182,20 @@ footer{
   display: none;
 }
 
+
 /* TABLET */
 
 @media screen and (max-width: 768px){
-          .two-columns .column{
-            width:100%;
-            float: none;
+  .two-columns .column{
+  width:100%;
+  float: none;
+          }
+  .column{
+  background-color: #F3CDA6;
 }
-          .desktop{
-       display: none;
+
+  .desktop{
+  display: none;
 }
 
 /* MOBILE */
@@ -196,16 +205,16 @@ footer{
 }
 
 @media screen and (max-width: 320px){
-          .two-columns .column{
-            width:100%;
-}
-          .third-image{
-            display: none;
-            background-color: #F3CDA6;
+  .two-columns .column{
+  width:100%;
 }
 
-          .mobile{
-            display: none;
+  .third-image{
+  display: none;
+  background: none;
+}
 
+  .mobile{
+  display: none;
 }
 
